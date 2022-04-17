@@ -9,10 +9,6 @@
  
 </p>
 
-> Terminal only accepts ANSI color.<br>
-> Username: admin<br>
-> Password: admin<br>
-
 ## Language</br>
 
  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/> <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
