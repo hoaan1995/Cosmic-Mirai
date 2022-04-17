@@ -42,6 +42,7 @@ Please help me press the STAR button thanks a lot
 
 # Setup
 ```sh
+PLS DELETE FILE "DELETEME.txt" in loader/bins, dlr/release
 READ Setup.txt file
 ```
 
