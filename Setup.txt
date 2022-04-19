@@ -147,6 +147,7 @@ cd ~/
 chmod 0777 * -R
 sh build.sh
 
+// Fixed bot don't join
 ulimit -n999999; ulimit -u999999; ulimit -e999999
 
 cd
