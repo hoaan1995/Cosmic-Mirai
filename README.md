@@ -15,7 +15,9 @@
  </div>
  
  ## Logs</br>
- - RELEASE!
+ - NEW THEME!
+ - NEW SELFREPS!
+ - NEW BYPASS!
  
 ## Screenshot
 ![lk](https://i.ibb.co/dD7WnKd/bandicam-2022-04-17-05-23-17-509.jpg)
