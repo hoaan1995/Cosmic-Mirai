@@ -81,7 +81,7 @@ func (this *Admin) Handle() {
 			}
 
 			time.Sleep(time.Second)
-			if _, err := this.conn.Write([]byte(fmt.Sprintf("\033]0; Cosmic Net > Bots: [%d] | User: [%s] | Methods:[6] | Bypass:[1]\007", BotCount, username))); err != nil {
+			if _, err := this.conn.Write([]byte(fmt.Sprintf("\033]0; Cosmic Net > Bots: [%d] | User: [%s] | Methods:[7] | Bypass:[2]\007", BotCount, username))); err != nil {
 				this.conn.Close()
 				break
 			}
