@@ -15,9 +15,8 @@
  </div>
  
  ## Logs</br>
- - NEW THEME!
- - NEW SELFREPS!
- - NEW BYPASS!
+ - NEW BANNERS!
+ - 2 METHODS SYN AND DNS!
  
 ## Screenshot
 ![lk](https://i.ibb.co/dD7WnKd/bandicam-2022-04-17-05-23-17-509.jpg)
