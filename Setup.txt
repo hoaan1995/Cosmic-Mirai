@@ -30,7 +30,7 @@ cd ~/
 mkdir /etc/xcompile
 cd /etc/xcompile 
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-i586.tar.bz2
-wget https://download852.mediafire.com/xpfpjh28t5vg/d27eg75z2r07ci4/cross-compiler-i586.tar.bz2
+wget https://download1510.mediafire.com/rbn5knrsm9jg/f7ps4butf6w0fuz/cross-compiler-i686.tar.bz2
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-m68k.tar.bz2
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mips.tar.bz2
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mipsel.tar.bz2
