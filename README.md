@@ -19,8 +19,7 @@
  - 2 METHODS SYN AND DNS!
  
 ## Screenshot
-![lk](https://i.ibb.co/dD7WnKd/bandicam-2022-04-17-05-23-17-509.jpg)
-![lk](https://i.ibb.co/MZYhSb8/bandicam-2022-04-17-05-24-03-249.jpg)
+![lk](https://i.ibb.co/M2gzz1R/bandicam-2022-05-13-20-15-40-914.jpg)
 
 # Tree
 * [Read now pls](#README)
