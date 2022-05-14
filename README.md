@@ -22,23 +22,11 @@
 ## Screenshot
 ![lk](https://i.ibb.co/M2gzz1R/bandicam-2022-05-13-20-15-40-914.jpg)
 
-# Tree
-* [Read now pls](#README)
-* [Info](#Info)
-* [Setup](#Setup)
-* [Credits](#Credits)
-* [T.O.S](#TOS)
-* [Contact](#Contact)
 
 # README ♥️
 Thanks for using it.<br>
-Please help me press the STAR button thanks a lot
-
-# Info
-- [x] Open Source
-- [x] Powerful
-- [x] Any Selfreps
-- [x] Bypass 
+Please help me press the STAR button thanks a lot<br>
+If you encounter any errors or problems during installation, please contact me to quickly fix it!!!
 
 
 # Setup
