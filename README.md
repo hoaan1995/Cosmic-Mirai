@@ -35,9 +35,10 @@ PLS DELETE FILE "DELETEME.txt" in loader/bins, dlr/release
 READ Setup.txt file
 ```
 
-# Credits
+# NOTE
 ```sh
-zxcr9999
+How to add new user?
+- Type command adduser
 ```
 
 # TOS:
