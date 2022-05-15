@@ -37,8 +37,13 @@ READ Setup.txt file
 
 # NOTE
 ```sh
-How to add new user?
+How to add normal user?
 - Type command adduser
+
+How to add admin user?
+1. Go to vps and type command mysql -u root -pYOURPASSWORD
+2. Type command use cosmic;
+3. Type command INSERT INTO users VALUES (NULL, 'adminx', 'adminpassword', 0, 0, 0, 0, -1, 1, 30, '');
 ```
 
 # TOS:
