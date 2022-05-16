@@ -20,7 +20,7 @@
  - UPDATE ANY SELFREPS!
  
 ## Screenshot
-![lk](https://i.ibb.co/M2gzz1R/bandicam-2022-05-13-20-15-40-914.jpg)
+![lk](https://i.ibb.co/Y2gH8Vp/neww.png)
 
 
 # README ♥️
