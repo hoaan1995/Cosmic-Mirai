@@ -30,7 +30,7 @@ cd ~/
 mkdir /etc/xcompile
 cd /etc/xcompile 
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-i586.tar.bz2
-wget https://download1510.mediafire.com/rbn5knrsm9jg/f7ps4butf6w0fuz/cross-compiler-i686.tar.bz2
+wget https://download1510.mediafire.com/hhba8xqfctlg/f7ps4butf6w0fuz/cross-compiler-i686.tar.bz2
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-m68k.tar.bz2
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mips.tar.bz2
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mipsel.tar.bz2
@@ -40,8 +40,8 @@ wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-sparc.tar
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv4l.tar.bz2
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv5l.tar.bz2
 wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-armv6l.tar.bz2
-wget https://download1588.mediafire.com/oc7a7l7dxyfg/m8nkyje2nasbrua/cross-compiler-armv7l.tar.bz2
-wget https://download1582.mediafire.com/k47t4xt5szig/65ksdozyyadv8ny/cross-compiler-x86_64.tar.bz2
+wget https://download1588.mediafire.com/k2rojctb16vg/m8nkyje2nasbrua/cross-compiler-armv7l.tar.bz2
+wget https://download1582.mediafire.com/u67i54mjeyhg/65ksdozyyadv8ny/cross-compiler-x86_64.tar.bz2
 tar -jxf cross-compiler-i586.tar.bz2
 tar -jxf cross-compiler-i686.tar.bz2
 tar -jxf cross-compiler-m68k.tar.bz2
