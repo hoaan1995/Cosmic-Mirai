@@ -86,6 +86,37 @@ struct table_value
 #define TABLE_KILLER_REP9 72
 #define TABLE_KILLER_REP10 73
 
+#define TABLE_ATK_KEEP_ALIVE            74
+#define TABLE_ATK_ACCEPT                75
+#define TABLE_ATK_ACCEPT_LNG            76
+#define TABLE_ATK_CONTENT_TYPE          77
+#define TABLE_ATK_SET_COOKIE            78
+#define TABLE_ATK_REFRESH_HDR           79
+#define TABLE_ATK_LOCATION_HDR          80
+#define TABLE_ATK_SET_COOKIE_HDR        81
+#define TABLE_ATK_CONTENT_LENGTH_HDR    82
+#define TABLE_ATK_TRANSFER_ENCODING_HDR 83
+#define TABLE_ATK_CHUNKED               84
+#define TABLE_ATK_KEEP_ALIVE_HDR        85
+#define TABLE_ATK_CONNECTION_HDR        86
+#define TABLE_ATK_DOSARREST             87
+#define TABLE_ATK_CLOUDFLARE_NGINX      88
+#define TABLE_HTTP_1                  	89
+#define TABLE_HTTP_2                  	90
+#define TABLE_HTTP_3                	91
+#define TABLE_HTTP_4                 	92 
+#define TABLE_HTTP_5                 	93
+#define TABLE_HTTP_6                 	94
+#define TABLE_HTTP_7                 	95
+#define TABLE_HTTP_8                 	96
+#define TABLE_HTTP_9                 	97
+#define TABLE_HTTP_10                 	98
+#define TABLE_HTTP_11                 	99
+#define TABLE_HTTP_12                 	100
+#define TABLE_HTTP_13                 	101
+#define TABLE_HTTP_14                 	102
+#define TABLE_HTTP_15                 	103
+
 #define TABLE_MAX_KEYS 31
 
 void table_init(void);
