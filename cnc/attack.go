@@ -190,7 +190,7 @@ var attackInfoLookup map[string]AttackInfo = map[string]AttackInfo {
         "TCP FRAG Packet Flood",
     },
     "!httpflood": AttackInfo {
-        10,
+        9,
         []uint8 {8, 7, 20, 21, 22, 24},
         "http flood",
     },
