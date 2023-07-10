@@ -53,6 +53,5 @@ What you use it for is up to you, we do not take any responsibility for this act
 
 # CONTACT:
 ```sh
-Telegram: @zxcr9999
-Discord: zxcr9999#1770
+Telegram: @learneverything9
 ```
